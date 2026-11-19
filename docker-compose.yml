@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  frameflow-qa:
+    build: .
+    container_name: frameflow-qa
+    ports:
+      - "8501:8501"
+    restart: unless-stopped

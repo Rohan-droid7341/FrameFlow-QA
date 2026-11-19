@@ -1,0 +1,53 @@
+{
+  "project": "Multimodal-Video-QA-Evaluation",
+  "fps": 30.0,
+  "video_duration_seconds": 120.0,
+  "annotator_id": "annotator_core_01",
+  "segments": [
+    {
+      "segment_id": "seg_001",
+      "action": "actor_entering_frame",
+      "start_time": 0.0,
+      "end_time": 14.5,
+      "confidence": 0.98,
+      "keyframe_indices": [0, 150, 435],
+      "tags": ["ambient_lighting", "single_actor"]
+    },
+    {
+      "segment_id": "seg_002",
+      "action": "tool_interaction",
+      "start_time": 14.5,
+      "end_time": 42.0,
+      "confidence": 0.99,
+      "keyframe_indices": [435, 800, 1260],
+      "tags": ["fine_motor", "high_precision"]
+    },
+    {
+      "segment_id": "seg_003",
+      "action": "occlusion_event",
+      "start_time": 42.0,
+      "end_time": 58.2,
+      "confidence": 0.94,
+      "keyframe_indices": [1260, 1500, 1746],
+      "tags": ["partial_actor_exit", "viewpoint_shift"]
+    },
+    {
+      "segment_id": "seg_004",
+      "action": "tool_inspection",
+      "start_time": 58.2,
+      "end_time": 90.0,
+      "confidence": 0.97,
+      "keyframe_indices": [1746, 2200, 2700],
+      "tags": ["quality_audit", "static_pose"]
+    },
+    {
+      "segment_id": "seg_005",
+      "action": "actor_exiting_scene",
+      "start_time": 90.0,
+      "end_time": 120.0,
+      "confidence": 0.99,
+      "keyframe_indices": [2700, 3100, 3600],
+      "tags": ["scene_transition", "end_session"]
+    }
+  ]
+}
